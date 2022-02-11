@@ -1,6 +1,6 @@
 #GetCleaner app android studio. 
-Final course project
-1 screen for start menu
+Final course project\\
+1 screen for start menu\\
 2 screens for sign
 1 screen for manage my account and chagne option with pop up
 1 screen choose city
