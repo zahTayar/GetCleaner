@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    android:background="#667788">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#DCDCDC"
+        >
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/logout_BTN_find_cleaner"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight=".01"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logout" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:textSize="30sp"
+            android:layout_gravity="center"
+            android:layout_marginStart="70dp"
+            android:layout_weight=".1"
+            android:fontFamily="sans-serif-medium"
+            android:textStyle="bold"
+            android:shadowColor="@color/white"
+
+            />
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/frame1_IB_manage_my_account"
+            android:src="@drawable/user"
+            android:layout_marginStart="50dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:layout_weight=".01"
+            android:layout_marginEnd="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hi"
+                android:id="@+id/hi_TV_with_name"
+                android:layout_marginBottom="40dp"
+                android:layout_marginTop="140dp"
+                android:textSize="30sp"
+                android:layout_marginStart="15dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="left"
+                android:fontFamily="sans-serif-medium"
+                android:textStyle="bold"
+                android:shadowColor="@color/white"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="All you have to do is choose a specific town from the list below.\nI will search for any cleaners I have in the city.\nAhhh submit the button."
+                android:fontFamily="sans-serif-medium"
+                android:textStyle="bold"
+                android:shadowColor="@color/white"
+                android:layout_marginBottom="180dp"
+                />
+
+                <Spinner
+                    android:id="@+id/spinner_towns"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:drawable/btn_dropdown"
+                    android:spinnerMode="dropdown"/>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/find_cleaner_BTN"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:text="Find cleaner"
+                android:backgroundTint="#808080"
+
+                />
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "662373804901",
+    "project_id": "getcleaner-61a33",
+    "storage_bucket": "getcleaner-61a33.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:662373804901:android:c62c61069bbfaebabccf8c",
+        "android_client_info": {
+          "package_name": "com.example.zah.getcleaner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "662373804901-7k3ib2i4bifr34n6j52vubkdvtoha0k1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCki4rOTZonO44qk_uykgGYUWcUnUnf3sU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "662373804901-7k3ib2i4bifr34n6j52vubkdvtoha0k1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

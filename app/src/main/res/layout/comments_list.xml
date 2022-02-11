@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="45dp"
+    android:elevation="25dp"
+    app:cardElevation="25dp"
+    android:layout_margin="10dp"
+    app:cardBackgroundColor="@color/white">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/cleaner_LBL_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:maxLines="4"
+            android:minLines="1"
+            android:text="Comment"
+            android:textSize="14sp" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_below="@id/cleaner_RTNG_stars"
+        android:ellipsize="end"
+        android:maxLines="4"
+        android:minLines="1"
+        android:text="By: "
+        android:textSize="14sp" />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/cleaner_LBL_byhow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:minLines="1"
+            android:text="byhow"
+            android:textSize="14sp" />
+    <androidx.appcompat.widget.AppCompatRatingBar
+        android:id="@+id/cleaner_RTNG_stars"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cleaner_LBL_comment"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="6dp"
+        android:paddingBottom="8dp"
+        android:progressTint="#FFFF00"
+        android:rating="0"
+        android:secondaryProgressTint="#AEBC861C" />
+
+        </LinearLayout>
+</LinearLayout>
+    </RelativeLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

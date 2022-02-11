@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="45dp"
+    android:elevation="25dp"
+    app:cardElevation="25dp"
+    android:layout_margin="10dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/cleaner_IMG_image"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@id/cleaner_RTNG_stars"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/user" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/cleaner_IMG_favorite"
+            android:layout_width="36dp"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@id/cleaner_LBL_title"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:padding="6dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_heart_empty" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/cleaner_IMG_comments"
+            android:layout_width="36dp"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@id/cleaner_LBL_actors"
+            android:layout_alignBottom="@id/cleaner_RTNG_stars"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:padding="6dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/comment" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/cleaner_LBL_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_toStartOf="@id/cleaner_IMG_favorite"
+            android:layout_toEndOf="@id/cleaner_IMG_image"
+            android:ellipsize="end"
+            android:gravity="bottom"
+            android:maxLines="2"
+            android:minLines="1"
+            android:text="Cleaner name"
+            android:textSize="18sp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/cleaner_LBL_actors"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cleaner_LBL_title"
+            android:layout_alignStart="@id/cleaner_LBL_title"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:maxLines="4"
+            android:minLines="2"
+            android:text="Details about "
+            android:textSize="14sp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/cleaner_LBL_town"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cleaner_LBL_actors"
+            android:layout_alignStart="@id/cleaner_LBL_title"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="city"
+            android:textSize="14sp" />
+
+
+        <androidx.appcompat.widget.AppCompatRatingBar
+            android:id="@+id/cleaner_RTNG_stars"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cleaner_LBL_town"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="6dp"
+            android:layout_toEndOf="@id/cleaner_IMG_image"
+            android:paddingBottom="8dp"
+            android:progressTint="#FFFF00"
+            android:rating="0"
+            android:secondaryProgressTint="#AEBC861C" />
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>
